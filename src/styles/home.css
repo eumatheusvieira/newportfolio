@@ -1,0 +1,60 @@
+#home {
+  display: flex;
+  min-height: calc(100vh - 75px);
+}
+
+#cta {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 10%;
+}
+
+#cta .title {
+  font-size: 2rem;
+}
+
+#cta-buttons {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+#cta-buttons a {
+  border-radius: 16px;
+  padding: 16px 30px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#banner {
+  margin-left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 40%;
+}
+
+#banner img {
+  height: 100%;
+  width: fit-content;
+}
+
+@media screen and (max-width: 1170px) {
+  #home {
+    margin-top: 60px;
+    min-height: 100%;
+    padding-top: 0px;
+  }
+
+  #banner,
+  #banner img {
+    display: none;
+  }
+
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
